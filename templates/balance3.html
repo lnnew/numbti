@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id = "aa" class="background-image">
+  <div class="w3-center w3-container">
+<h3 style="margin-top:1em">더 자신에게 맞는 문장을 골라주세요!</h3>
+
+<button onclick="makeChoice(4)" class="w3-center animated-button" id="button4" style="margin-top:20em">
+  나는 프로젝트를 할 때 직접 몸으로 하는 걸 좋아한다!
+</button>
+      <button onclick="makeChoice(5)" class="w3-center animated-button" id="button5" style="margin-top:2em">
+    나는 프로젝트를 할 때 앉아서 컴퓨터로 하는 걸 좋아한다!
+</button>
+<style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+    }
+
+    #aa {
+      height: 100%;
+    }
+    h1 {
+        color: #333;
+    }
+
+    button {
+        padding: 40px;
+        font-size: 16px;
+        margin: auto;
+        width: 80%;
+        cursor: pointer;
+        top: 80%;
+        height: 10em;
+background-color: white;
+border-radius: 20px;
+border: 0px;
+
+    }
+    .background-image {
+      background-image: url('../templates/during.gif'); /* Replace 'your-image-url.jpg' with the path to your image */
+      background-size: cover;
+      background-position: center;
+    }
+</style>
+<style>
+    /* Your existing styles */
+
+    /* Add animation styles */
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-30px);
+      }
+      60% {
+        transform: translateY(-15px);
+      }
+    }
+
+    .animated-button {
+      animation: bounce 0.8s ease;
+    }
+  </style>
+  <script>
+  function makeChoice(choice) {
+    // Your choice handling logic goes here
+
+    // Add the animated class after button click
+    document.getElementById(`button${choice + 1}`).classList.add('animated-button');
+    document.href("/"+choice);
+    // Add any other logic you need here
+  }
+ </script>
+  </div></a>
+
+</div>
+</div>
+
+</div>
+
+<style>
+#startbtn{
+  width:150px;
+
+   opacity: 0.9;
+}
+#startbtn {
+  position: relative;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#startbtn:hover {
+   opacity: 1.0;
+}
+.bottomNav{
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.deo {
+  margin: auto;
+  align-items: center;
+  font-size:12px;
+  color: black;
+  background-color: #FFE988;
+}
+#aa {
+  width: 37rem;
+  margin: 0 auto;
+    background-color: #FFE988;
+
+}
+@media only screen and (max-width: 600px) {
+  #aa {
+    width: 100%;
+  }
+  #startbtn{
+    bottom:120px;
+  }
+}
+*,h3 {
+  font-family: 'Gowun Dodum', sans-serif;
+}
+.link-icon { position: relative; display: inline-block; width: auto;    font-size: 12px; font-weight: 500; color: #333; margin-right: 20px; padding-top: 50px; }
+.link-icon.twitter { background-image: url(../DATA/icon-twitter.png); background-repeat: no-repeat; }
+.link-icon.facebook { background-image: url(../DATA/icon-facebook.png); background-repeat: no-repeat; }
+.link-icon.kakao { background-image: url(../DATA/icon-kakao.png); background-repeat: no-repeat; }
+
+</style>
+</body>
+</html>
